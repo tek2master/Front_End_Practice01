@@ -27,7 +27,7 @@ render() {
   return (
     <div>
     <h1 onClick={this.handleClick}>{this.state.clicks}</h1>
-    <AJ asdf={this.handleAJClick} clicks={this.state.ajClicks} />
+
     <Link to="/kittens">KITTENS</Link>
     <br />
     <Link to="/kittens/kevin">KITTEN named Kevin</Link>
@@ -50,12 +50,7 @@ const Kittens = props => {
   )
 }
 
-const AJ = props => {
-  console.log(props);
-  return (
-    <h1>onClick={props.asdf}>AJ AJ AJ AJ: {props.clicks}</h1>
-  )
-}
+
 
 render(
   <BrowserRouter>
